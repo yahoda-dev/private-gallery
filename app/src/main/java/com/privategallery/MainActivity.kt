@@ -12,6 +12,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.privategallery.ui.navigation.GalleryNavHost
 import com.privategallery.ui.theme.PrivateGalleryTheme
 
 class MainActivity : ComponentActivity() {
@@ -30,6 +31,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             PrivateGalleryTheme {
                 // todo: GalleryNavHost() 구현 예정
+                GalleryNavHost()
             }
         }
     }
