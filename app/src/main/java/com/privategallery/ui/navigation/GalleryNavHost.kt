@@ -9,7 +9,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.privategallery.ui.gallery.GalleryScreen
+import com.privategallery.ui.gallery.GalleryRoute
 
 @Composable
 fun GalleryNavHost(
@@ -23,7 +23,7 @@ fun GalleryNavHost(
             modifier = Modifier.padding(innerPadding)
         ) {
             composable(AppDestination.Gallery.route) {
-                GalleryScreen()
+                GalleryRoute()
             }
         }
     }

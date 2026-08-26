@@ -14,7 +14,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.privategallery.ui.navigation.GalleryNavHost
 import com.privategallery.ui.theme.PrivateGalleryTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,7 +32,6 @@ class MainActivity : ComponentActivity() {
         // 3. Compose 최상위 테마 및 NavHost 연결
         setContent {
             PrivateGalleryTheme {
-                // todo: GalleryNavHost() 구현 예정
                 GalleryNavHost()
             }
         }
